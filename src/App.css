@@ -1,12 +1,57 @@
-.App {
-  text-align: center;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 100px;
+  height: 100px;
 }
+
+h2, h3, h4 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 20px
+}
+
+h3, h4 {
+  font-size: 16px;
+}
+
+p {
+  margin: 5px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-list {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.animal-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 350px;
+  width: 200px;
+  border: 1px black solid;
+  margin: 3px;
+}
+
 
 .header {
   border-bottom: solid black 1px;
+  text-align: center;
 }
