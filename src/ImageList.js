@@ -3,7 +3,22 @@ import ImageItem from './ImageItem.js'
 import images from './data.js'
 
 export default class ImageList extends Component {
+    state = {
+        filter: ''
+    }
+
+    handleChange = e => {
+        this.setState({
+            filter: e.target.value
+        });
+    }
+
     render() {
+        const filteredAnimals = this.props.images.filter((animal) => {
+            if (!this.state.filter) return true;
+            if (animal.keyword === this.state.filter) return true;
+            return false;
+        });
         return (
             <>
                 Filter animals by keyword: <select onChange={this.handleChange}>
@@ -22,7 +37,7 @@ export default class ImageList extends Component {
                 </select>
                 <div className="image-list">
                     {
-                        images.map(animal =>
+                        filteredAnimals.map(animal =>
                             <ImageItem
                                 url={animal.url}
                                 title={animal.title}
