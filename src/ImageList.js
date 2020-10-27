@@ -21,7 +21,8 @@ export default class ImageList extends Component {
         });
         return (
             <>
-                Filter animals by keyword: <select onChange={this.handleChange}>
+                <span className='filter-text'>Filter animals by keyword: </span>
+                <select onChange={this.handleChange}>
                     <option value=''>Show All</option>
                     <option value='rhino'>Rhino</option>
                     <option value='narwhal'>Narwhal</option>
