@@ -5,7 +5,7 @@ export default class ImageItem extends Component {
         return (
             <div className="animal-section">
                 <div className="section-image">
-                    <img src={this.props.url} />
+                    <img src={this.props.url} alt="" />
                 </div>
                 <h2>{this.props.title}</h2>
                 <p>{this.props.description}</p>
