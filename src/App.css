@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(jungle.jpg);
+  background-size: cover;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+h2, h3, h4 {
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 20px
+}
+
+h3, h4 {
+  font-size: 16px;
+}
+
+p {
+  margin: 5px;
+}
+
+.filter-text {
+  color: white;
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin: 5px;
+}
+
+.fineprint {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-style: oblique;
+
+}
+
+.section-image {
+  margin-top: 15px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-list {
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.animal-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: lightgray;
+  height: 350px;
+  width: 200px;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+
+.header {
+  border-bottom: solid black 1px;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
